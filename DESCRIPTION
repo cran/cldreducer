@@ -1,0 +1,38 @@
+Package: cldreducer
+Title: Reduce Compact Letter Displays
+Version: 0.2.0
+Authors@R: 
+  c(
+    person("John", "Ennis", , "john.m.ennis@aigora.com", role = c("aut", "cre")),
+    person("Aigora", role = c("cph", "fnd"))
+  )
+Description: Reduces compact letter displays (CLDs) of all pairwise
+    comparisons. A CLD gives two groups a common letter exactly when they are
+    not significantly different. The package finds a display with the fewest
+    letter assignments that keeps every one of these relationships. This is the
+    assignment-minimum clique covering problem of Ennis, Fayle, and Ennis
+    (2012) <doi:10.1145/2133803.2275596>, solved as a mixed-integer linear
+    program with 'HiGHS'. Among the displays with the fewest assignments, it
+    returns one fixed canonical display, so the result does not depend on the
+    solver. The package includes the wheat yield example of Piepho (2004)
+    <doi:10.1198/1061860043515>.
+License: MIT + file LICENSE
+Copyright: See file COPYRIGHTS for example data sources and reuse
+        status.
+URL: https://github.com/aigorahub/cld-reducer
+BugReports: https://github.com/aigorahub/cld-reducer/issues
+Depends: R (>= 4.0.0)
+Imports: highs (>= 1.14.0), Matrix
+Suggests: testthat (>= 3.1.7)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+Config/roxygen2/version: 8.1.0
+LazyData: true
+NeedsCompilation: no
+Packaged: 2026-10-10 12:56:44 UTC; john
+Author: John Ennis [aut, cre],
+  Aigora [cph, fnd]
+Maintainer: John Ennis <john.m.ennis@aigora.com>
+Repository: CRAN
+Date/Publication: 2026-10-21 14:50:13 UTC
